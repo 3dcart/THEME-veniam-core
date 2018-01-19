@@ -37,11 +37,6 @@ h1 {
     font-weight: 600;
     text-transform: uppercase;
 }
-.category-actions {
-    padding: 0 0 35px;
-    margin: 0 0 35px;
-    border-bottom: 1px solid #ececec;
-}
 
 
 
@@ -58,7 +53,7 @@ h1 {
     padding: 7px 12px;
 }
 .form-control.search-text {
-     border-color: #ececec;
+     border:1px solid #ececec;
     -webkit-box-shadow: none;
     box-shadow: none;
 }
@@ -302,10 +297,13 @@ ul.extrapages li a {
     font-size: 16px;
 }
 .footer-social {
-    padding-top: 15px;
-    padding-bottom: 15px;
     border-top: 1px solid #2d2d2d;
     border-bottom: 1px solid #2d2d2d;
+}
+.social-icons,
+.global-footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 .copyright {
     padding-top: 25px;
@@ -520,9 +518,9 @@ span.freeshipping {
 .home-page-content {
 	padding-top: 0;
 }
-.home-page-content .category-footer {
+/*.home-page-content .category-footer {
     padding: 40px 0 60px;
-}
+}*/
 .home-page-content .category-footer h3 {
     font-size: 20px;
     line-height: 1;
