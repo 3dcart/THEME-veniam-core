@@ -152,6 +152,4 @@ jQuery(function ($) {
 		location.href = this.href;
 	});
 
-	if (jQuery('.footer-social .global_footer').text() == "") jQuery('.global-footer-outer').remove();
-
 });

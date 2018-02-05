@@ -64,9 +64,11 @@ h1 {
     font-weight: 600;
     text-transform: uppercase;
 }
-.btn-default {
+.btn-default,
+.btn-primary:focus, 
+.btn-primary:active:focus {
     border-color: #000;
-    /*background-color: transparent;*/
+    background-color: #fff;
     color: #000;
 }
 .btn-default:hover,
@@ -708,11 +710,11 @@ span.freeshipping {
     list-style: none;
 }
 .mobile-menu-widget ul li {
-    margin: 0 0 10px;
+    margin: 0 0 0;
 }
 .mobile-menu-widget ul li a {
     padding: 0;
-    line-height: 1;
+    line-height: 40px;
     font-size: 13px;
     background-color: transparent !important;
     display: block;
