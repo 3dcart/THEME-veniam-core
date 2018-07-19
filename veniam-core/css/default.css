@@ -2,12 +2,12 @@
 ** Bootstrap over-rides
 */
 body {
-	font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
     color: #000;
-	line-height: 1.5;
+    line-height: 1.5;
 }
 h1 {
-	font-size: 30px;
+    font-size: 30px;
 }
 
 .titles {
@@ -54,8 +54,6 @@ h1 {
 }
 .form-control.search-text {
      border:1px solid #ececec;
-    -webkit-box-shadow: none;
-    box-shadow: none;
 }
 
 .btn {
@@ -87,7 +85,7 @@ h1 {
 }
 .btn-default.btn-inverse:hover,
 .btn-primary:hover {
-	color: #fff;
+    color: #fff;
     background-color: #000;
     border-color: #000;
     opacity: 0.8;
@@ -99,8 +97,8 @@ h1 {
 }
 .navbar-inverse .navbar-nav > li > a {
     color: #fff;
-	font-weight: 600;
-	letter-spacing: 0.025em;
+    font-weight: 600;
+    letter-spacing: 0.025em;
     text-transform: uppercase;
     font-size: 15px;
     line-height: 18px;
@@ -274,14 +272,14 @@ span.cart-title {
     font-size: 12px;
     line-height: 15px;
     display: block;
-	font-weight: bold;
+    font-weight: bold;
 }
 span.cart-count {
     color: #666;
     font-size: 10px;
     display: block;
     line-height: 15px;
-	font-weight: 500;
+    font-weight: 500;
 }
 .site-footer {
     background-color: #0f0f0f;
@@ -311,11 +309,17 @@ ul.extrapages li a {
     padding-top: 25px;
     padding-bottom: 25px;
     text-align: center;
-    color: #626262;
+    color: #aaa;
     font-size: 14px;
     font-weight: 500;
 }
-
+.copyright a {
+    color: #aaa;
+    text-decoration: underline;
+}
+#divRewardWidget {
+    color: #000 !important;
+}
 .mailist-box {
     width: 320px;
     float: right;
@@ -324,7 +328,7 @@ ul.extrapages li a {
 .mailist-box h3 {
     margin: 0 0 15px;
     /*font-family: 'Montserrat', sans-serif;*/
-	font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 500;
@@ -389,7 +393,7 @@ ul.social-icons li.social-icons-label {
     font-size: 18px;
     vertical-align: middle;
     /*font-family: 'Montserrat', sans-serif;*/
-	font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     margin-right: 20px;
 }
@@ -474,8 +478,8 @@ span.freeshipping {
     right: 0;
     bottom: 0;
     margin: auto;
-	max-height: 100%;
-	max-width: 100%;
+    max-height: 100%;
+    max-width: 100%;
 }
 .product-item .action .btn {
     min-width: 150px;
@@ -518,7 +522,7 @@ span.freeshipping {
     z-index: 10;
 }
 .home-page-content {
-	padding-top: 0;
+    padding-top: 0;
 }
 /*.home-page-content .category-footer {
     padding: 40px 0 60px;
@@ -768,7 +772,7 @@ span.freeshipping {
     text-decoration: none;
 }
 .floating-cart a:hover {
-	opacity: 0.6;
+    opacity: 0.6;
 }
 .floating-cart span.cart-icon {
     display: block;
