@@ -473,16 +473,13 @@ span.freeshipping {
     font-weight: bold;
 }
 .product-item .img {
-    min-height: 304px;
     position: relative;
-    border: 1px solid #ececec;
     background-color: #fff;
 }
 .product-item .img a {
     display: block;
 }
 .product-item .img img {
-    position: absolute;
     top: 0;
     left: 0;
     right: 0;
