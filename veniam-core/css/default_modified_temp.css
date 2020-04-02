@@ -1,29 +1,14 @@
 /*
 ** Bootstrap over-rides
 */
-html, body {
-  height: 100%;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-}
-.page-content {
-  flex: 1 0 auto;
-}
-footer {
-  flex-shrink: 0;
-}
-
 body {
 	font-family: 'Raleway', sans-serif;
-    color: #[body_text_color];
+    color: #222222;
 	line-height: 1.5;
-	font-size: [base_font_size]px;
+	font-size: 14px;
 }
 h1 {
-	font-size: [heading_base_size]px;
+	font-size: 30px;
 }
 
 .titles {
@@ -34,10 +19,10 @@ h1 {
 }
 
 .page_heading {
-    color: #[headings_color];
+    color: #003B46;
 }
 .page_heading:after {
-    border-bottom: 1px solid #[headings_color];
+    border-bottom: 1px solid #003B46;
 }
 
 .subcategories {
@@ -89,23 +74,23 @@ h1 {
 }
 .btn-default {
     border-color: #[btn2_border];
-    background-color: #[btn2_color];
-    color: #[btn2_text_color];
+    background-color: #66A5A5;
+    color: #07575B;
 }
 .btn-default:hover,
 .btn-default:focus,
 .btn-default:hover:focus,
 .btn-default.focus {
     border-color: #[btn2_border];
-    background-color: #[btn2_color];
-    color: #[btn2_text_color];
+    background-color: #66A5A5;
+    color: #07575B;
 	opacity: 0.8;
 }
 .btn-primary,
 .btn-inverse {
-    color: #[btn_text_color];
-    background-color: #[btn_color];
-    border-color: #[btn_border];
+    color: #FFFFFF;
+    background-color: #003B46;
+    border-color: #003B46;
 }
 .btn-primary:hover,
 .btn-primary:focus, 
@@ -113,18 +98,18 @@ h1 {
 .btn-inverse,
 .btn-inverse:focus, 
 .btn-inverse:active:focus {
-	color: #[btn_text_color];
-    background-color: #[btn_color];
-    border-color: #[btn_color];
+	color: #FFFFFF;
+    background-color: #003B46;
+    border-color: #003B46;
     opacity: 0.8;
 }
 .navbar.navbar-inverse {
     margin-bottom: 0;
     border: none;
-    background-color: #[nav_color];
+    background-color: #07575B;
 }
 .navbar-inverse .navbar-nav > li > a {
-    color: #[nav_text_color];
+    color: #FFFFFF;
 	font-weight: 600;
 	letter-spacing: 0.025em;
     text-transform: uppercase;
@@ -310,7 +295,7 @@ span.cart-count {
 	font-weight: 500;
 }
 .site-footer {
-    background-color: #[footer_color];
+    background-color: #003B46;
     padding: 55px 0 0;
     color: #fff;
     font-family: 'Raleway', sans-serif;
@@ -321,7 +306,7 @@ ul.extrapages li {
     margin: 0 0 15px;
 }
 ul.extrapages li a {
-    color: #[footer_text_color];
+    color: #FFFFFF;
     font-size: 16px;
 }
 .footer-social {
@@ -337,7 +322,7 @@ ul.extrapages li a {
     padding-top: 25px;
     padding-bottom: 25px;
     text-align: center;
-    color: #[footer_text_color];
+    color: #FFFFFF;
     font-size: 14px;
     font-weight: 500;
 }
@@ -456,7 +441,7 @@ ul.social-icons li.social-icons-label {
 .rating:hover .rating-star:hover ~ .rating-star,
 .rating-input:checked ~ .rating-star,
 .reviews-stars {
-    color: #[stars_color];
+    color: #003B46;
 }
 
 .product-item .name a {
@@ -466,10 +451,10 @@ ul.social-icons li.social-icons-label {
     text-decoration: line-through;
 }
 .sale-price {
-    color: #[sale_text];
+    color: #003B46;
 }
 .product-item .on-sale-badge {
-	background-color: #[sale_text];
+	background-color: #003B46;
 }
 del.original-price {
     font-weight: 500;

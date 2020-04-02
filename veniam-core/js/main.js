@@ -1,3 +1,4 @@
+//flyout cart
 function update_flyoutcart() {
     jQuery.ajax({
         url: '/frontapi.asp',
@@ -16,6 +17,9 @@ function update_flyoutcart() {
                     }
                     if (totalItems != null) jQuery('#floating-cart .minicart-items').text(totalItems);
                     jQuery('#floating-cart').fadeIn(300);
+
+					//Dropdown cart
+					//core_dropdown_cart(data);
                 }
             }
         },
@@ -43,8 +47,7 @@ function addcart_callback(productDiv, data) {
     update_flyoutcart();
 
     var currency = jQuery('body').data('currency');
-    jQuery('.minicart-subtotal').text(currency + subtotal);
-   
+    jQuery('.minicart-subtotal').text(currency + subtotal);   
 }
 
 function mailinglist_callfront(form) {
