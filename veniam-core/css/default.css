@@ -29,7 +29,22 @@ h1 {
     font-weight: 600;
     letter-spacing: 0;
 }
-
+#skip a
+{
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+}
+ 
+#skip a:focus
+{
+position:static;
+width:auto;
+height:auto;
+}
 .subcategories {
     border-bottom: 1px solid #ececec;
     padding: 0 0 30px;
@@ -196,6 +211,7 @@ h1 {
     opacity: 0.6;
 }
 .top-nav {
+
 }
 .top-nav ul {
     padding: 19px 0;
@@ -211,7 +227,7 @@ h1 {
     float: left;
     margin-right: 10px;
     padding-right: 10px;
-    border-right: 1px solid #ececec;
+    border-right: 1px solid #000;
 }
 .top-nav .useraccount ul {
     float: right;
@@ -222,7 +238,7 @@ h1 {
     padding: 0;
 }
 .top-nav ul li a {
-    color: #666;
+    color: #000;
 }
 
 .site-header {
@@ -288,7 +304,7 @@ span.cart-title {
     font-weight: bold;
 }
 span.cart-count {
-    color: #666;
+    color: #000;
     font-size: 10px;
     display: block;
     line-height: 15px;
@@ -306,7 +322,7 @@ ul.extrapages li {
     margin: 0 0 15px;
 }
 ul.extrapages li a {
-    color: #ccc;
+    color: #fff;
     font-size: 16px;
 }
 .footer-social {
@@ -322,12 +338,12 @@ ul.extrapages li a {
     padding-top: 25px;
     padding-bottom: 25px;
     text-align: center;
-    color: #aaa;
+    color: #fff;
     font-size: 14px;
     font-weight: 500;
 }
 .copyright a {
-    color: #aaa;
+    color: #fff;
     text-decoration: underline;
 }
 #divRewardWidget {
@@ -338,7 +354,7 @@ ul.extrapages li a {
     float: right;
     margin-bottom: 10px;
 }
-.mailist-box h3 {
+.mailist-box h2.mailinglist-title {
     margin: 0 0 15px;
     /*font-family: 'Montserrat', sans-serif;*/
     font-family: 'Raleway', sans-serif;
@@ -385,7 +401,7 @@ ul.extrapages li a {
     line-height: 13px;
     font-weight: 300;
     margin-left: 3px;
-    color: #ccc;
+    color: #fff;
     cursor: pointer;
 }
 
@@ -457,13 +473,22 @@ ul.social-icons li.social-icons-label {
     text-decoration: line-through;
 }
 .sale-price {
-    color: #d04b64;
+    color: #9E293E;
 }
 del.original-price {
     font-weight: 500;
 }
 span.freeshipping {
-    color: #00a888;
+    color: #005C4B;
+}
+.product-items .product-item .addtowishlist a {
+    color:#265A87;
+}
+.breadcrumnb ol li>a {
+    color: #575757;
+}
+.product-item .on-sale-badge {
+    background-color: #922639;
 }
 .product-item .status span:before {
     content: "-";
@@ -735,7 +760,7 @@ span.freeshipping {
     font-size: 13px;
     background-color: transparent !important;
     display: block;
-    color: #555;
+    color: #000;
     text-decoration: none !important;
 }
 .mobile-menu-widget ul li a:hover {

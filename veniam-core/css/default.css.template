@@ -347,7 +347,7 @@ ul.extrapages li a {
     float: right;
     margin-bottom: 10px;
 }
-.mailist-box h3 {
+.mailist-box h2.mailinglist-title {
     margin: 0 0 15px;
     /*font-family: 'Montserrat', sans-serif;*/
 	font-family: 'Raleway', sans-serif;
@@ -744,7 +744,7 @@ span.freeshipping {
     font-size: 13px;
     background-color: transparent !important;
     display: block;
-    color: #555;
+    color: #000;
     text-decoration: none !important;
 }
 .mobile-menu-widget ul li a:hover {
