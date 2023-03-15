@@ -16,11 +16,35 @@
     <!--END: FRAME_RSSFEEDS-->
 
     <!--START: page_styles-->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/templates/common-core/lib/bootstrap/css/bootstrap.css" type="text/css" />
-    <link rel="StyleSheet" href="assets/templates/common-core/css/core.css" type="text/css" />
-    [page_styles]
-    <link rel="StyleSheet" href="assets/templates/[template]/css/[stylesheet]" type="text/css" />
+    <link
+        rel="preload stylesheet"
+        href="assets/templates/common-core/lib/bootstrap/css/bootstrap.css"
+        as="style"
+        onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+        <link
+            href="assets/templates/common-core/lib/bootstrap/css/bootstrap.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+    </noscript>
+    <link rel="preload stylesheet" href="assets/templates/common-core/css/core.css" type="text/css" as="style" />
+    
+	[page_styles]
+	<link
+        rel="preload stylesheet"
+        href="assets/templates/[template]/css/[stylesheet]"
+        as="style"
+        onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+        <link
+            href="assets/templates/[template]/css/[stylesheet]"
+            rel="stylesheet"
+            type="text/css"
+        />
+    </noscript>
     <!--END: page_styles-->
 
 </head>
@@ -316,22 +340,60 @@
         </div>
     </nav>
     
-    <link rel="stylesheet" href="assets/templates/common-core/lib/fontello/css/fontello.min.css" type="text/css" />
-    <link rel="stylesheet" href="assets/templates/common-core/lib/fontello/css/animation.css" type="text/css" />
+    <link
+        rel="preload stylesheet"
+        href="assets/templates/common-core/lib/fontello/css/fontello.min.css"
+        as="style"
+        onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+        <link
+            href="assets/templates/common-core/lib/fontello/css/fontello.min.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+    </noscript>
+    <link
+        rel="preload stylesheet"
+        href="assets/templates/common-core/lib/fontello/css/animation.css"
+        as="style"
+        onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+        <link
+            href="assets/templates/common-core/lib/fontello/css/animation.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+    </noscript>
 
     
     <!--START: page_scripts-->
     <script src="assets/templates/common-core/lib/jquery.min.js"></script>
     <script src="assets/templates/common-core/lib/jquery-migrate-3.0.1.min.js"></script>
-    <script src="assets/templates/common-core/lib/bootstrap/js/bootstrap.js"></script>
-    <script src="assets/templates/common-core/js/core.js"></script>
-    <script src="assets/templates/[template]/js/main.js"></script>
+    <script src="assets/templates/common-core/lib/bootstrap/js/bootstrap.js" defer="defer"></script>
+    <script src="assets/templates/common-core/js/core.js" defer="defer"></script>
+    <script src="assets/templates/[template]/js/main.js" defer="defer"></script>
     [page_scripts]
     <!--END: page_scripts-->
 
     <!--START: quicksearch-->
-    <link rel="stylesheet" href="assets/templates/common-core/quicksearch/quicksearch.css" type="text/css" media="screen" />
-    <script type="text/javascript" src="assets/templates/common-core/quicksearch/jquery.quicksearch.js"></script>
+    <link
+        rel="preload stylesheet"
+        href="assets/templates/common-core/quicksearch/quicksearch.css"
+        as="style"
+		media="screen"
+        onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+        <link
+            href="assets/templates/common-core/quicksearch/quicksearch.css"
+            rel="stylesheet"
+            type="text/css"
+			media="screen"
+        />
+    </noscript>
+    <script defer type="text/javascript" src="assets/templates/common-core/quicksearch/jquery.quicksearch.js"></script>
     <script type="text/javascript">
         jQuery(function () {
             jQuery('#searchlight').searchlight('/search_quick.asp');
@@ -349,11 +411,11 @@
             var stats_x=stats_s*stats_m;
             var prdID = '[catalogid]';
             var catID = '[catid]';
-            var imgg = document.createElement('img');
-                imgg.Class
-                imgg.width = '1';
-                imgg.height = '1';
-                imgg.alt = "3dcart stats";
+            var stImg = document.createElement('img');
+                stImg.Class
+                stImg.width = '1';
+                stImg.height = '1';
+                stImg.alt = "3dcart stats";
 
             stats_f='' + escape(document.referrer); stats_f=stats_f.replace('_','----');
             if (navigator.appName=='Netscape'){stats_b='NS';} 
@@ -367,10 +429,8 @@
             stats_j=navigator.javaEnabled();
             info='w=' + stats_w + '&h=' + stats_h + '&c=' + stats_c + '&r=' + stats_f + '&u='+ stats_u + '&fs=' + stats_fs + '&b=' + stats_b + '&x=' + stats_x + '&cat=' + catID + '&prd=' + prdID;
 
-            imgg.src =file + '?' + info; 
-            document.getElementById('3dStats').appendChild(imgg);
-
-            //document.write('<img src="' + file + '?'+info+ '" width="1" height="1" border="0" alt="stats" />');
+            stImg.src =file + '?' + info; 
+            document.getElementById('3dStats').appendChild(stImg);
         </script>
         <noscript><img src="/stats/count.asp" width="90" height="30" alt="3dcart stats" /> </noscript>
     </div>
