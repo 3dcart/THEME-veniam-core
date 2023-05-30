@@ -11,6 +11,14 @@ body {
 .page-content {
 	flex: 1 0 auto;
 }
+.homeCarousel img.img-responsive {
+    width: 100%;
+}
+@media (max-width: 767px) {
+	.antiCls-xs { 
+		visibility: hidden; 
+	}
+}
 footer {
 	flex-shrink: 0;
 }
